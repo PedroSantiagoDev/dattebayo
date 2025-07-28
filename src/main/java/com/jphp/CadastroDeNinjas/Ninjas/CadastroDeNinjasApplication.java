@@ -1,4 +1,4 @@
-package com.jphp.CadastroDeNinjas;
+package com.jphp.CadastroDeNinjas.Ninjas;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

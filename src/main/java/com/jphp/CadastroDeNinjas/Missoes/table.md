@@ -1,4 +1,0 @@
-- id
-- Nome da missão
-- Dificuldade
-- id do ninja (cada ninja so pode fazer uma missão de vez) - ()
