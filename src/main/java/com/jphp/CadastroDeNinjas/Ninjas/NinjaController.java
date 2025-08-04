@@ -1,14 +1,32 @@
 package com.jphp.CadastroDeNinjas.Ninjas;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping
 public class NinjaController {
-    @GetMapping("/")
-    public String index() {
-        return "Boas vindas";
+    @PostMapping("/criar")
+    public String Criar() {
+        return "Criar Ninja";
+    }
+
+    @GetMapping("/todos")
+    public String mostrarTodosOsNinjas() {
+        return "mostrar todos os ninjas";
+    }
+
+    @GetMapping("/todosID")
+    public String mostraTodosOsNinjasPorId() {
+        return "mostrar todos os ninjas por id";
+    }
+
+    @PutMapping("/alterarID")
+    public String alterarNinjasPorId() {
+        return "alterar os dados de um ninja por id";
+    }
+
+    @DeleteMapping("/deletarID")
+    public String deletarNinjaPorId() {
+        return "deletando ninja por id";
     }
 }
