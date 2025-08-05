@@ -3,10 +3,10 @@ package com.jphp.CadastroDeNinjas.Ninjas;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping
+@RequestMapping("ninjas")
 public class NinjaController {
     @PostMapping("/criar")
-    public String Criar() {
+    public String criar() {
         return "Criar Ninja";
     }
 
