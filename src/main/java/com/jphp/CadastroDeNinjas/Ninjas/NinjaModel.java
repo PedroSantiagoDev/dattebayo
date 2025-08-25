@@ -23,6 +23,8 @@ public class NinjaModel {
 
     private int idade;
 
+    private String rank;
+
     @ManyToOne
     @JoinColumn(name = "missoes_id") // Foreing Key
     private MissoesModel missoes;
